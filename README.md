@@ -12,7 +12,7 @@
 
 Production-validated Oracle XStream CDC pipeline delivering real-time data streaming from Oracle 19c to Apache Kafka.
 
-**Proven Performance:**
+**Reported Performance (environment-specific):**
 - **14M+ events** migrated in 22 minutes
 - **1,063,000 messages/sec** sustained throughput
 - **< 100ms** end-to-end latency (p99)
@@ -21,12 +21,14 @@ Production-validated Oracle XStream CDC pipeline delivering real-time data strea
 
 ---
 
+These figures are benchmark results reported by this project; validate them against the hardware, Oracle configuration, connector version, workload, and Kafka sizing used in your own environment.
+
 ## ⚡ Quick Start
 
 ```bash
 # Clone repository
-git clone git@github.com:ManiselvanSE/oracle-xstream-kafka-integration-poc.git
-cd oracle-xstream-kafka-integration-poc
+git clone https://github.com/ManiselvanSE/oci-oracle-rac-cdc-hammerdb-benchmark.git
+cd oci-oracle-rac-cdc-hammerdb-benchmark
 
 # Start Kafka stack (Docker required)
 docker-compose -f configs/docker/docker-compose.yml up -d
